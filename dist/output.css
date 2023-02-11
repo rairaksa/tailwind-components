@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -1317,8 +1317,16 @@ video {
   justify-items: stretch;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .gap-8{
@@ -1708,9 +1716,9 @@ video {
   border-style: none;
 }
 
-.border-slate-600{
+.border-dark-secondary{
   --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+  border-color: rgb(236 236 236 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -1718,24 +1726,24 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-200{
+.bg-dark-secondary{
   --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+  background-color: rgb(236 236 236 / var(--tw-bg-opacity));
 }
 
-.bg-blue-500{
+.bg-info{
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(206 236 253 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100{
+.bg-purple-secondary{
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(210 215 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200{
+.bg-slate{
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(234 238 246 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1851,6 +1859,10 @@ video {
 .object-scale-down{
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .p-6{
@@ -2018,18 +2030,27 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
 
-.text-blue-500{
+.text-dark{
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
-.text-blue-600{
+.text-info-dark{
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(23 120 176 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2410,13 +2431,6 @@ video {
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
-}
-
-@media (prefers-color-scheme: dark){
-  .dark\:bg-gray-700{
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  }
 }
 
 @media (min-width: 640px){
