@@ -1,15 +1,12 @@
 <html>
     <head>
         <title>Workspace Components</title>
-        <link href="/dist/output.css" rel="stylesheet">
+        <link href="./dist/output.css" rel="stylesheet">
     </head>
     <body class="antialiased font-body text-dark">
-        <nav class="w-full bg-gray-100">
-            <h1>Tailwind Components</h1>
-        </nav>
         <section class="w-full h-full bg-slate">
-            <div id="content" class="w-4/5 flex flex-row gap-8 mx-auto bg-blue-200 h-full">
-                <div class="w-1/4 lg:w-1/5 h-auto flex flex-col gap-6 mt-4">
+            <div id="content" class="w-5/6 flex flex-col md:flex-row gap-8 mx-auto bg-blue-200 h-full">
+                <div class="w-full md:w-1/3 lg:w-1/5 h-auto flex flex-col gap-6 mt-4">
                     <!-- Task Input Form Card -->
                     <div id="card-form" class="w-full bg-white rounded-lg p-6 drop-shadow-xl">
                         <label class="text-sm font-medium">Create New Card</label>
@@ -86,7 +83,7 @@
                     <!-- Tag Checklist -->
                     <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-4 drop-shadow-xl">
                         <div class="flex flex-row items-center">
-                            <label class="text-sm font-medium">Label</label>
+                            <label class="text-sm font-medium">Labels</label>
                             <div class="w-6 h-6 ml-auto -mr-1 -mt-3">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="6" cy="12" r="2" fill="#A8B5CB"/>
@@ -114,7 +111,7 @@
                                     </svg>
                                 </div>
                                 <p class="text-xs font-medium">
-                                    Copywriting
+                                    UI Design
                                 </p>
                                 <input type="checkbox" name="tag-checklist" class="ml-auto appearance-none h-6 w-6 border border-blue-primary rounded-sm bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
                             </div>
@@ -125,61 +122,212 @@
                                     </svg>
                                 </div>
                                 <p class="text-xs font-medium">
-                                    Copywriting
+                                    Illustrations
                                 </p>
                                 <input type="checkbox" name="tag-checklist" class="ml-auto appearance-none h-6 w-6 border border-blue-primary rounded-sm bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/2 lg:w-3/5 h-auto flex flex-col gap-6 mt-4">
+                <div class="w-full md:w-1/3 lg:w-3/5 h-auto flex flex-col gap-6 mt-4">
                     <!-- Task Navigator -->
-                    <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                        <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                            UI Design
+                    <div class="w-full flex flex-row items-center justify-between gap-10 bg-white rounded-lg py-3 px-6 drop-shadow-xl">
+                        <div class="logo flex flex-row items-center gap-2.5">
+                            <div class="rounded-full flex items-center justify-center w-7 h-7 bg-blue-primary text-white font-bold">
+                                T
+                            </div>
+                            <label class="font-bold text-blue-primary">
+                                TASK
+                            </label>
                         </div>
-                        <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                        <input type="text" class="rounded-full bg-border-secondary flex-grow text-xs py-3 pl-6" placeholder="Search everything...">
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.91314 10.8263C8.6266 10.8263 10.8263 8.6266 10.8263 5.91314C10.8263 3.19969 8.6266 1 5.91314 1C3.19969 1 1 3.19969 1 5.91314C1 8.6266 3.19969 10.8263 5.91314 10.8263Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71931 9.71888L12.8074 12.807" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>                                    
+                            </span>
+                        </input>
+                        <div class="flex flex-row gap-9">
+                            <a href="#" class="text-xs hover:text-blue-primary">Projects</a>
+                            <a href="#" class="text-xs hover:text-blue-primary">Setting</a>
+                            <a href="#" class="text-xs hover:text-blue-primary">Help</a>
+                        </div>
                     </div>
-                    <div class="flex flex-row gap-6">
-                        <div class="w-1/3 h-auto flex flex-col gap-6 mt-4">
-                            <!-- Task Assign -->
-                            <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                                <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                                    UI Design
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6 mt-4">
+                            <!-- Task Assignment -->
+                            <div class="w-full h-auto flex flex-col gap-4">
+                                <div class="w-full h-auto flex flex-row items-center gap-5 bg-white rounded-lg p-6 drop-shadow-xl">
+                                    <div class="w-6 h-6 flex items-center justify-center">
+                                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 8C16.21 8 18 6.21 18 4C18 1.79 16.21 0 14 0C11.79 0 10 1.79 10 4C10 6.21 11.79 8 14 8ZM5 6V3H3V6H0V8H3V11H5V8H8V6H5ZM14 10C11.33 10 6 11.34 6 14V16H22V14C22 11.34 16.67 10 14 10Z" fill="#C4CAD3"/>
+                                        </svg>
+                                    </div>
+                                    <label class="font-medium text-sm text-dark-secondary">Assign task to</label>
+                                    <div class="w-6 h-6 ml-auto flex items-center justify-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 15.713L18.01 9.703L16.597 8.288L12 12.888L7.40399 8.288L5.98999 9.702L12 15.713Z" fill="#AFBDD8"/>
+                                        </svg>                                    
+                                    </div>
                                 </div>
-                                <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                                <div class="w-full h-auto flex flex-col bg-white rounded-lg drop-shadow-xl">
+                                    <!-- Search component -->
+                                    <div class="p-7 w-full h-auto flex">
+                                        <input type="text" class="w-full rounded-full bg-border-secondary flex-grow text-xs py-3 pl-6" placeholder="Search everything...">
+                                    </div>
+                                    <!-- List User -->
+                                    <div class="flex flex-col">
+                                        <div class="flex flex-row items-center py-3 px-7 gap-4 hover:bg-blue-secondary border-l-2 hover:border-l-2 border-white hover:border-blue-primary">
+                                            <div class="rounded-full h-9 w-9 bg-purple-primary"></div>
+                                            <label class="font-medium text-xs">Angela Smith</label>
+                                            <label class="font-medium text-xs text-border-secondary">16 task on progress</label>
+                                        </div>
+                                        <div class="flex flex-row items-center py-3 px-7 gap-4 hover:bg-blue-secondary border-l-2 hover:border-l-2 border-white hover:border-blue-primary">
+                                            <div class="rounded-full h-9 w-9 bg-purple-primary"></div>
+                                            <label class="font-medium text-xs">Angela Smith</label>
+                                            <label class="font-medium text-xs text-border-secondary">16 task on progress</label>
+                                        </div>
+                                        <div class="flex flex-row items-center py-3 px-7 gap-4 hover:bg-blue-secondary border-l-2 hover:border-l-2 border-white hover:border-blue-primary">
+                                            <div class="rounded-full h-9 w-9 bg-purple-primary"></div>
+                                            <label class="font-medium text-xs">Angela Smith</label>
+                                            <label class="font-medium text-xs text-border-secondary">16 task on progress</label>
+                                        </div>
+                                        <div class="flex flex-row items-center py-3 px-7 gap-4 hover:bg-blue-secondary border-l-2 hover:border-l-2 border-white hover:border-blue-primary">
+                                            <div class="rounded-full h-9 w-9 bg-purple-primary"></div>
+                                            <label class="font-medium text-xs">Angela Smith</label>
+                                            <label class="font-medium text-xs text-border-secondary">16 task on progress</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Tag Checklist -->
-                            <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                                <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                                    UI Design
+                            <!-- Task Progress -->
+                            <div id="card-form" class="w-full bg-white rounded-lg p-6 drop-shadow-xl">
+                                <label class="text-sm font-medium">Konsep design homepage</label>
+                                <!-- Deadline -->
+                                <div class="flex flex-row items-center gap-1 mt-2">
+                                    <div class="w-6 h-6">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.6333 4.66667C13.5541 4.27861 13.2127 4 12.8167 4H6.83333C6.3731 4 6 4.3731 6 4.83333V17.3333C6 17.7936 6.3731 18.1667 6.83333 18.1667C7.29357 18.1667 7.66667 17.7936 7.66667 17.3333V12.3333H12.3333L12.5333 13.3333C12.6089 13.7236 12.9525 14.004 13.35 14H17.6667C18.1269 14 18.5 13.6269 18.5 13.1667V6.5C18.5 6.03976 18.1269 5.66667 17.6667 5.66667H13.8333L13.6333 4.66667Z" fill="#C4CAD3"/>
+                                        </svg>
+                                    </div>
+                                    <label class="text-dark-secondary text-xs">Due Nov 24</label>
                                 </div>
-                                <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                                <p class="text-xs leading-5 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                         </div>
-                        <div class="w-1/3 h-auto flex flex-col gap-6 mt-4">
-                            <!-- Tag Checklist -->
-                            <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                                <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                                    UI Design
+                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6 mt-4">
+                            <!-- Weekly Progress -->
+                            <div id="card-form" class="w-full bg-white rounded-lg p-6 drop-shadow-xl">
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-col gap-3">
+                                        <label class="text-sm font-medium">Weekly Progress</label>
+                                        <label class="text-xs text-dark-secondary">Start from Nov 7-14, 2020</label>
+                                    </div>
+                                    <div class="w-6 h-6">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6" cy="12" r="2" fill="#A8B5CB"/>
+                                            <circle cx="12.4001" cy="12" r="2" fill="#A8B5CB"/>
+                                            <circle cx="18.8001" cy="12" r="2" fill="#A8B5CB"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                                <div class="flex flex-col gap-2 p-12 justify-center items-center">
+                                    <label class="font-semibold text-4xl text-green-primary">75%</label>
+                                    <label class="text-xs text-dark-secondary">Tasks Completed</label>
+                                </div>
                             </div>
-                            <!-- Tag Checklist -->
-                            <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                                <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                                    UI Design
+                            <!-- Recent Activity -->
+                            <div id="card-form" class="w-full bg-white rounded-lg p-7 drop-shadow-xl">
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-col gap-3">
+                                        <label class="text-sm font-medium">Recent Activity</label>
+                                    </div>
                                 </div>
-                                <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                                <!-- Notification List -->
+                                <div class="flex flex-col gap-7 mt-7 justify-center items-center">
+                                    <div class="flex flex-row gap-3">
+                                        <div class="w-7 h-7 bg-green-primary rounded-full"></div>
+                                        <div class="flex flex-col gap-2">
+                                            <label class="text-xs">
+                                                <span class="font-bold">Karen</span> leave some comments on Konsep Ilustrasi 
+                                            </label>
+                                            <label class="text-xs text-dark-secondary">
+                                                Aug 10
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-3">
+                                        <div class="w-7 h-7 bg-purple-primary rounded-full"></div>
+                                        <div class="flex flex-col gap-2">
+                                            <label class="text-xs">
+                                                <span class="font-bold">Karen</span> change project info on Project Homepage 
+                                            </label>
+                                            <label class="text-xs text-dark-secondary">
+                                                Aug 10
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-3">
+                                        <div class="w-7 h-7 bg-green-primary rounded-full"></div>
+                                        <div class="flex flex-col gap-2">
+                                            <label class="text-xs">
+                                                <span class="font-bold">Karen</span> leave some comments on Konsep Ilustrasi 
+                                            </label>
+                                            <label class="text-xs text-dark-secondary">
+                                                Aug 10
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="w-1/3 h-auto flex flex-col gap-6 mt-4">
-                            <!-- Tag Checklist -->
-                            <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                                <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                                    UI Design
+                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6 mt-4">
+                            <!-- Tasks -->
+                            <div id="card-form" class="w-full bg-white rounded-lg p-7 drop-shadow-xl">
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-col gap-3">
+                                        <label class="text-sm font-medium">Tasks</label>
+                                    </div>
                                 </div>
-                                <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                                <!-- Notification List -->
+                                <div class="flex flex-col divide-y divide-border-secondary">
+                                    <div class="flex flex-row items-center gap-6 py-4">
+                                        <input type="checkbox" name="tag-checklist" class="appearance-none h-6 w-6 border border-blue-primary rounded-full bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
+                                        <p class="text-xs font-medium">
+                                            Design Homepage
+                                        </p>
+                                        <div class="w-6 h-6 ml-auto">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.897 21.968C12.3663 21.9696 11.857 21.7585 11.483 21.382L3.646 13.547C3.23247 13.1349 3.02047 12.5621 3.066 11.98L3.566 5.41401C3.63742 4.42569 4.42541 3.64068 5.414 3.57301L11.98 3.07301C12.032 3.06201 12.083 3.06201 12.135 3.06201C12.6647 3.06138 13.1726 3.27234 13.546 3.64801L21.383 11.482C21.7582 11.8571 21.9691 12.3659 21.9691 12.8965C21.9691 13.4271 21.7582 13.9359 21.383 14.311L14.311 21.382C13.9368 21.7583 13.4277 21.9693 12.897 21.968ZM8.654 6.65401C7.74882 6.65427 6.95666 7.26245 6.72259 8.13684C6.48853 9.01123 6.87091 9.93383 7.65491 10.3863C8.43891 10.8387 9.42904 10.7082 10.069 10.068L10.076 10.062L10.083 10.055L10.075 10.062C10.6434 9.48857 10.8113 8.62957 10.5006 7.88432C10.1898 7.13907 9.46143 6.65377 8.654 6.65401Z" fill="#C4CAD3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-6 py-4">
+                                        <input type="checkbox" name="tag-checklist" class="appearance-none h-6 w-6 border border-blue-primary rounded-full bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
+                                        <p class="text-xs font-medium">
+                                            UI Design
+                                        </p>
+                                        <div class="w-6 h-6 ml-auto">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.897 21.968C12.3663 21.9696 11.857 21.7585 11.483 21.382L3.646 13.547C3.23247 13.1349 3.02047 12.5621 3.066 11.98L3.566 5.41401C3.63742 4.42569 4.42541 3.64068 5.414 3.57301L11.98 3.07301C12.032 3.06201 12.083 3.06201 12.135 3.06201C12.6647 3.06138 13.1726 3.27234 13.546 3.64801L21.383 11.482C21.7582 11.8571 21.9691 12.3659 21.9691 12.8965C21.9691 13.4271 21.7582 13.9359 21.383 14.311L14.311 21.382C13.9368 21.7583 13.4277 21.9693 12.897 21.968ZM8.654 6.65401C7.74882 6.65427 6.95666 7.26245 6.72259 8.13684C6.48853 9.01123 6.87091 9.93383 7.65491 10.3863C8.43891 10.8387 9.42904 10.7082 10.069 10.068L10.076 10.062L10.083 10.055L10.075 10.062C10.6434 9.48857 10.8113 8.62957 10.5006 7.88432C10.1898 7.13907 9.46143 6.65377 8.654 6.65401Z" fill="#C4CAD3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-6 py-4">
+                                        <input type="checkbox" name="tag-checklist" class="appearance-none h-6 w-6 border border-blue-primary rounded-full bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
+                                        <p class="text-xs font-medium">
+                                            Illustrations
+                                        </p>
+                                        <div class="w-6 h-6 ml-auto">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.897 21.968C12.3663 21.9696 11.857 21.7585 11.483 21.382L3.646 13.547C3.23247 13.1349 3.02047 12.5621 3.066 11.98L3.566 5.41401C3.63742 4.42569 4.42541 3.64068 5.414 3.57301L11.98 3.07301C12.032 3.06201 12.083 3.06201 12.135 3.06201C12.6647 3.06138 13.1726 3.27234 13.546 3.64801L21.383 11.482C21.7582 11.8571 21.9691 12.3659 21.9691 12.8965C21.9691 13.4271 21.7582 13.9359 21.383 14.311L14.311 21.382C13.9368 21.7583 13.4277 21.9693 12.897 21.968ZM8.654 6.65401C7.74882 6.65427 6.95666 7.26245 6.72259 8.13684C6.48853 9.01123 6.87091 9.93383 7.65491 10.3863C8.43891 10.8387 9.42904 10.7082 10.069 10.068L10.076 10.062L10.083 10.055L10.075 10.062C10.6434 9.48857 10.8113 8.62957 10.5006 7.88432C10.1898 7.13907 9.46143 6.65377 8.654 6.65401Z" fill="#C4CAD3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Tag Checklist -->
                             <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
@@ -191,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 lg:w-1/5 h-auto flex flex-col gap-6 mt-4">
+                <div class="w-full md:w-1/3 lg:w-1/5 h-auto flex flex-col gap-6 mt-4">
                     <!-- Tag Checklist -->
                     <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
                         <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">

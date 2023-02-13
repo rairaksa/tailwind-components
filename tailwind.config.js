@@ -12,7 +12,9 @@ module.exports = {
       'info-dark': '#1778b0',
       'purple-primary': '#7784ee',
       'purple-secondary': '#d2d7ff',
-      'blue-primary': '#08a0f7'
+      'blue-primary': '#08a0f7',
+      'blue-secondary': '#f0f5fc',
+      'green-primary': '#46bd84'
     },
     extend: {},
     fontFamily: {
