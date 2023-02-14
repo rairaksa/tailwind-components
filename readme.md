@@ -27,5 +27,5 @@ Start the server
 
 ## Demo
 
-Coming Soon
+Click [here](https://rairaksa.github.io/tailwind-components/)
 
