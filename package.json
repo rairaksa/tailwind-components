@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "liveserver": "^0.1.20"
+  },
+  "scripts": {
+    "tailwind-run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   }
 }

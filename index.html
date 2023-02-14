@@ -3,10 +3,10 @@
         <title>Workspace Components</title>
         <link href="./dist/output.css" rel="stylesheet">
     </head>
-    <body class="antialiased font-body text-dark">
-        <section class="w-full h-full bg-slate">
-            <div id="content" class="w-5/6 flex flex-col md:flex-row gap-8 mx-auto bg-blue-200 h-full">
-                <div class="w-full md:w-1/3 lg:w-1/5 h-auto flex flex-col gap-6 mt-4">
+    <body class="antialiased transition ease-in-out duration-100 font-body text-dark">
+        <section class="w-full min-h-screen bg-slate py-4 px-4">
+            <div id="content" class="w-full flex flex-col md:flex-row gap-6 mx-auto bg-blue-200 h-full">
+                <div class="w-full md:w-1/3 lg:w-1/5 h-auto flex flex-col gap-6">
                     <!-- Task Input Form Card -->
                     <div id="card-form" class="w-full bg-white rounded-lg p-6 drop-shadow-xl">
                         <label class="text-sm font-medium">Create New Card</label>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 lg:w-3/5 h-auto flex flex-col gap-6 mt-4">
+                <div class="w-full md:w-1/3 lg:w-3/5 h-auto flex flex-col gap-6">
                     <!-- Task Navigator -->
                     <div class="w-full flex flex-row items-center justify-between gap-10 bg-white rounded-lg py-3 px-6 drop-shadow-xl">
                         <div class="logo flex flex-row items-center gap-2.5">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row gap-6">
-                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6 mt-4">
+                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6">
                             <!-- Task Assignment -->
                             <div class="w-full h-auto flex flex-col gap-4">
                                 <div class="w-full h-auto flex flex-row items-center gap-5 bg-white rounded-lg p-6 drop-shadow-xl">
@@ -218,7 +218,7 @@
                                 <p class="text-xs leading-5 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                         </div>
-                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6 mt-4">
+                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6">
                             <!-- Weekly Progress -->
                             <div id="card-form" class="w-full bg-white rounded-lg p-6 drop-shadow-xl">
                                 <div class="flex flex-row justify-between">
@@ -284,9 +284,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6 mt-4">
+                        <div class="w-full lg:w-1/3 h-auto flex flex-col gap-6">
                             <!-- Tasks -->
-                            <div id="card-form" class="w-full bg-white rounded-lg p-7 drop-shadow-xl">
+                            <div id="card-form" class="w-full bg-white rounded-lg pt-7 pb-2 pl-7 drop-shadow-xl">
                                 <div class="flex flex-row justify-between">
                                     <div class="flex flex-col gap-3">
                                         <label class="text-sm font-medium">Tasks</label>
@@ -296,63 +296,157 @@
                                 <div class="flex flex-col divide-y divide-border-secondary">
                                     <div class="flex flex-row items-center gap-6 py-4">
                                         <input type="checkbox" name="tag-checklist" class="appearance-none h-6 w-6 border border-blue-primary rounded-full bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
-                                        <p class="text-xs font-medium">
-                                            Design Homepage
-                                        </p>
-                                        <div class="w-6 h-6 ml-auto">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.897 21.968C12.3663 21.9696 11.857 21.7585 11.483 21.382L3.646 13.547C3.23247 13.1349 3.02047 12.5621 3.066 11.98L3.566 5.41401C3.63742 4.42569 4.42541 3.64068 5.414 3.57301L11.98 3.07301C12.032 3.06201 12.083 3.06201 12.135 3.06201C12.6647 3.06138 13.1726 3.27234 13.546 3.64801L21.383 11.482C21.7582 11.8571 21.9691 12.3659 21.9691 12.8965C21.9691 13.4271 21.7582 13.9359 21.383 14.311L14.311 21.382C13.9368 21.7583 13.4277 21.9693 12.897 21.968ZM8.654 6.65401C7.74882 6.65427 6.95666 7.26245 6.72259 8.13684C6.48853 9.01123 6.87091 9.93383 7.65491 10.3863C8.43891 10.8387 9.42904 10.7082 10.069 10.068L10.076 10.062L10.083 10.055L10.075 10.062C10.6434 9.48857 10.8113 8.62957 10.5006 7.88432C10.1898 7.13907 9.46143 6.65377 8.654 6.65401Z" fill="#C4CAD3"/>
-                                            </svg>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-xs font-medium">
+                                                Design Homepage
+                                            </p>
+                                            <p class="text-xs text-dark-secondary">
+                                                Mon, Nov 23
+                                            </p>
+                                        </div>
+                                        <div class="w-6 h-6 ml-auto mr-7 bg-green-primary rounded-full">
+                                            <!-- image here -->
                                         </div>
                                     </div>
                                     <div class="flex flex-row items-center gap-6 py-4">
                                         <input type="checkbox" name="tag-checklist" class="appearance-none h-6 w-6 border border-blue-primary rounded-full bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
-                                        <p class="text-xs font-medium">
-                                            UI Design
-                                        </p>
-                                        <div class="w-6 h-6 ml-auto">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.897 21.968C12.3663 21.9696 11.857 21.7585 11.483 21.382L3.646 13.547C3.23247 13.1349 3.02047 12.5621 3.066 11.98L3.566 5.41401C3.63742 4.42569 4.42541 3.64068 5.414 3.57301L11.98 3.07301C12.032 3.06201 12.083 3.06201 12.135 3.06201C12.6647 3.06138 13.1726 3.27234 13.546 3.64801L21.383 11.482C21.7582 11.8571 21.9691 12.3659 21.9691 12.8965C21.9691 13.4271 21.7582 13.9359 21.383 14.311L14.311 21.382C13.9368 21.7583 13.4277 21.9693 12.897 21.968ZM8.654 6.65401C7.74882 6.65427 6.95666 7.26245 6.72259 8.13684C6.48853 9.01123 6.87091 9.93383 7.65491 10.3863C8.43891 10.8387 9.42904 10.7082 10.069 10.068L10.076 10.062L10.083 10.055L10.075 10.062C10.6434 9.48857 10.8113 8.62957 10.5006 7.88432C10.1898 7.13907 9.46143 6.65377 8.654 6.65401Z" fill="#C4CAD3"/>
-                                            </svg>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-xs font-medium">
+                                                Sketsa Ilustrasi
+                                            </p>
+                                            <p class="text-xs text-dark-secondary">
+                                                Mon, Nov 15
+                                            </p>
+                                        </div>
+                                        <div class="w-6 h-6 ml-auto mr-7 bg-green-primary rounded-full">
+                                            <!-- image here -->
                                         </div>
                                     </div>
                                     <div class="flex flex-row items-center gap-6 py-4">
                                         <input type="checkbox" name="tag-checklist" class="appearance-none h-6 w-6 border border-blue-primary rounded-full bg-white checked:bg-blue-primary checked:border-blue-primary focus:outline-none transition ">
-                                        <p class="text-xs font-medium">
-                                            Illustrations
-                                        </p>
-                                        <div class="w-6 h-6 ml-auto">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.897 21.968C12.3663 21.9696 11.857 21.7585 11.483 21.382L3.646 13.547C3.23247 13.1349 3.02047 12.5621 3.066 11.98L3.566 5.41401C3.63742 4.42569 4.42541 3.64068 5.414 3.57301L11.98 3.07301C12.032 3.06201 12.083 3.06201 12.135 3.06201C12.6647 3.06138 13.1726 3.27234 13.546 3.64801L21.383 11.482C21.7582 11.8571 21.9691 12.3659 21.9691 12.8965C21.9691 13.4271 21.7582 13.9359 21.383 14.311L14.311 21.382C13.9368 21.7583 13.4277 21.9693 12.897 21.968ZM8.654 6.65401C7.74882 6.65427 6.95666 7.26245 6.72259 8.13684C6.48853 9.01123 6.87091 9.93383 7.65491 10.3863C8.43891 10.8387 9.42904 10.7082 10.069 10.068L10.076 10.062L10.083 10.055L10.075 10.062C10.6434 9.48857 10.8113 8.62957 10.5006 7.88432C10.1898 7.13907 9.46143 6.65377 8.654 6.65401Z" fill="#C4CAD3"/>
-                                            </svg>
+                                        <div class="flex flex-col gap-1">
+                                            <p class="text-xs font-medium">
+                                                Onboarding Design
+                                            </p>
+                                            <p class="text-xs text-dark-secondary">
+                                                Mon, Nov 15
+                                            </p>
+                                        </div>
+                                        <div class="w-6 h-6 ml-auto mr-7 bg-green-primary rounded-full">
+                                            <!-- image here -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Tag Checklist -->
-                            <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                                <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                                    UI Design
+                            <!-- Task Progress -->
+                            <div id="card-form" class="w-full bg-white rounded-lg pt-7 pb-2 pl-7 drop-shadow-xl">
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-col gap-3">
+                                        <label class="text-sm font-medium">Task Progress</label>
+                                    </div>
                                 </div>
-                                <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                                <!-- Progress Bar List -->
+                                <div class="flex flex-col gap-6 mt-6 mb-8">
+                                    <div class="flex flex-col justify-between items-center gap-1 pr-7">
+                                        <div class="w-full flex flex-row justify-between">
+                                            <p class="text-xs font-medium">
+                                                Copywriting
+                                            </p>
+                                            <p class="text-xs text-dark-secondary">
+                                                2/6
+                                            </p>
+                                        </div>
+                                        <div class="w-full h-1 bg-purple-secondary rounded-full overflow-hidden">
+                                            <div class="w-2/6 h-full bg-purple-primary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col justify-between items-center gap-1 pr-7">
+                                        <div class="w-full flex flex-row justify-between">
+                                            <p class="text-xs font-medium">
+                                                Illustrations
+                                            </p>
+                                            <p class="text-xs text-dark-secondary">
+                                                6/12
+                                            </p>
+                                        </div>
+                                        <div class="w-full h-1 bg-green-secondary rounded-full overflow-hidden">
+                                            <div class="w-6/12 h-full bg-green-primary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col justify-between items-center gap-1 pr-7">
+                                        <div class="w-full flex flex-row justify-between">
+                                            <p class="text-xs font-medium">
+                                                UI Design
+                                            </p>
+                                            <p class="text-xs text-dark-secondary">
+                                                4/5
+                                            </p>
+                                        </div>
+                                        <div class="w-full h-1 bg-blue-secondary rounded-full overflow-hidden">
+                                            <div class="w-4/5 h-full bg-blue-primary"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Buttons -->
+                            <button class="block w-full py-3 bg-purple-primary text-white font-medium rounded-lg">Normal Button</button>
+                            <button class="block w-full py-3 bg-purple-secondary text-purple-primary font-medium rounded-lg flex flex-row items-center justify-center gap-2.5">
+                                <span class="">
+                                    <svg width="23" height="8" viewBox="0 0 23 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="4" cy="4" r="4" fill="#7784EE"/>
+                                        <circle cx="13.5" cy="4" r="3" fill="#7784EE"/>
+                                        <circle cx="21" cy="4" r="2" fill="#7784EE"/>
+                                    </svg>                                        
+                                </span>
+                                Loading Button
+                            </button>
+                            <button class="block w-full py-3 text-purple-primary border ring-purple-primary font-medium rounded-lg">Secondary Button</button>
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 lg:w-1/5 h-auto flex flex-col gap-6 mt-4">
-                    <!-- Tag Checklist -->
-                    <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                        <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                            UI Design
+                <div class="w-full md:w-1/3 lg:w-1/5 h-auto flex flex-col gap-6">
+                    <!-- File Attachment -->
+                    <div id="card-form" class="w-full bg-white rounded-lg pt-7 pb-2 pl-7 drop-shadow-xl">
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-col gap-3">
+                                <label class="text-sm font-medium">File Attachment</label>
+                            </div>
                         </div>
-                        <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                        <!-- Progress Bar List -->
+                        <div class="flex flex-col gap-3 mt-6 mb-8 pr-7">
+                            <div class="flex flex-row">
+                                <div class="">
+
+                                </div>
+                                <div class="w-full flex flex-row justify-between">
+                                    <label class="text-xs font-medium">
+                                        User-Journey.pdf
+                                    </label>
+                                    <label class="text-xs font-normal">
+                                        4.5MB
+                                    </label>
+                                    <label class="text-xs font-normal text-dark-secondary">
+                                        Cancel
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="w-full h-1 bg-blue-secondary rounded-full overflow-hidden">
+                                <div class="w-2/6 h-full bg-blue-primary"></div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Tag Checklist -->
-                    <div id="card-form" class="w-full flex flex-col gap-4 bg-white rounded-lg p-6 drop-shadow-xl">
-                        <div class="rounded-3xl font-medium text-xs px-4 py-2 bg-info text-info-dark">
-                            UI Design
+                    <!-- Alert -->
+                    <div class="w-full h-auto p-4 flex flex-row gap-5 items-center rounded-lg border border-green-primary bg-green-secondary">
+                        <div class="w-6 h-6">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="14" fill="#34A770"/>
+                                <path d="M10.1494 14.6833L13.4492 17.9831L20.0489 11.3835" stroke="white" stroke-width="1.45814" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
                         </div>
-                        <p class="text-xs leading-5">Membuat konsep ilustrasi untuk halaman homepage dan about us</p>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-bold text-xs text-green-primary">Success</label>
+                            <label class="text-xs text-green-primary">consectetur adipiscing elit sed</label>
+                        </div>
                     </div>
                 </div>
             </div>

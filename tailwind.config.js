@@ -14,7 +14,8 @@ module.exports = {
       'purple-secondary': '#d2d7ff',
       'blue-primary': '#08a0f7',
       'blue-secondary': '#f0f5fc',
-      'green-primary': '#46bd84'
+      'green-primary': '#46bd84',
+      'green-secondary': '#ebf6f1'
     },
     extend: {},
     fontFamily: {
